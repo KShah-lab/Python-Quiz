@@ -11,36 +11,19 @@ The game has 3 difficulty levels ranging from
 - Medium
 - Hard
 
-* **3 subjects**
+With those 3 difficulties, there are also 3 subjects raining from
+- Biology
+- Maths
+- Chemistry
 
-  * Biology
-  * Chemistry
-  * Maths
+There are 3 subjects per difficulty and 3 questions per subject so in total there are 27 questions!
+There is also a score system! This is where if you get a question right... you gain a point! 
+But if you get a question wrong... you lose a point! 
+The aim is to get the most points possible. If you get in the negatives, you have to spend that amount as cash in your bank account on dehydrated water. 
+To help, if you get a question wrong, you can try again. This comes with a little message of motivation to do better next time. 
+Likewise, if u get the question right, I provide you with a really bad joke and another message of motivation! 
 
-* **27 questions in total**
-
-  * 3 Biology questions per difficulty
-  * 3 Chemistry questions per difficulty
-  * 3 Maths questions per difficulty
-
-* **Score system**
-
-  * Correct answer = **+1 point**
-  * Wrong answer = **-1 point**
-
-* **Questions repeat until answered correctly**
-
-  * If you get a question wrong, you can try again.
-  * Your score is reduced by 1 for each incorrect attempt.
-
-* **Subject switching**
-
-  * After completing a subject, you can choose another subject or stop playing.
-
-* **Different reactions and jokes**
-
-  * Correct answers give you a joke and a reaction.
-  * Wrong answers give you a different response depending on the question.
+Once you've completed a subject of a difficulty, you get to choose from another subject. If you want to do another level, just restart the game and you can pick again and at the end just add up your final scores! 
 
 ## How It Works
 
