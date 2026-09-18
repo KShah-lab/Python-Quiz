@@ -30,7 +30,7 @@ Once you've completed a subject of a difficulty, you get to choose from another 
 
 ### Biology
 
-Biology questions range from basic knowledge in Easy mode to much more difficult biological terminology in Hard mode.
+Biology questions range from basic knowledge in Easy mode to much more difficult biological terminology in hard mode. Ive made it so that the questions are a range of botany and the human body so that u dont get too bored. But if you dont like it, you can always choose another subject.
 
 Examples include:
 
@@ -46,7 +46,7 @@ Examples include:
 
 ### Chemistry
 
-The Chemistry section contains questions covering basic chemical knowledge through to harder formula and chemistry questions.
+The Chemistry section contains questions covering basic chemical knowledge through to harder formula and chemistry questions. The hard section is formulae recall which shouldn't be too hard if you know ur stuff. But let's be honest, who even remembers the formula for like idk, dihydrogen monoxide. 
 
 Examples include:
 
@@ -62,7 +62,7 @@ Examples include:
 
 ### Maths
 
-The Maths section progresses from very simple questions to significantly harder mathematical concepts.
+The Maths section progresses from very simple questions to significantly harder maths questions. I mean if you know a high level of maths, these questions should not be too hard. Otherwise, they are really hard for anyone below maybe... 16 or 15. 
 
 Examples include:
 
@@ -100,68 +100,6 @@ The hardest section of the quiz contains more advanced terminology and concepts.
 
 Some questions are deliberately difficult, particularly in Biology and Maths.
 
-## Technologies Used
 
-The project is written entirely in **Python**.
 
-Some of the Python concepts used include:
 
-* `input()`
-* `print()`
-* Variables
-* `if`, `elif` and `else`
-* `while True`
-* `break`
-* `.strip()`
-* `.lower()`
-* `score += 1`
-* `score -= 1`
-
-## What I Learned
-
-While creating this project, I have learned how to use several important Python concepts together to create an interactive program.
-
-In particular, the project helped me understand:
-
-* How variables can store information and change during a program.
-* How `if`, `elif` and `else` statements control what happens.
-* How `while` loops can repeatedly run code.
-* How `break` can stop a loop.
-* How user input can be cleaned using `.strip()` and `.lower()`.
-* How to create a scoring system.
-* How different sections of a program can work together.
-* How to structure a larger Python program rather than just writing individual commands.
-
-## Future Improvements
-
-There are several things that could be added to the quiz in the future:
-
-* A larger question bank
-* Randomly selected questions
-* A timer
-* Multiple-choice questions
-* A high-score system
-* More subjects
-* More difficulty levels
-* A final percentage/grade
-* A leaderboard
-* Better input validation
-* Different endings depending on the final score
-
-## Final Score
-
-At the end of the game, the player's final score is displayed:
-
-```text
-=================
-FINAL SCORE: 12
-=================
-```
-
-The score represents the number of correct answers minus the number of incorrect attempts.
-
-## Credits
-
-Created as a Python learning project.
-
-And yes, the jokes are intentionally terrible.
