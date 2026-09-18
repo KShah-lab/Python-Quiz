@@ -1,9 +1,8 @@
-# Python-Quiz
 # The Python Quiz
 
-Welcome to **The Python Quiz** — a simple Python-based quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels.
+Welcome to my (drum roll) **The Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to school. In fact I dropped computer science as a subject since I am really bad at coding and anything remotely software related so feed back on this would be AMAZING!
 
-The aim of the project was to create a quiz that is simple to use, but still has enough variety to make it interesting. And yes, there are quite a few terrible science jokes.
+I created this project to 
 
 ## Features
 
