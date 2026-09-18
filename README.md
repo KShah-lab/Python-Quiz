@@ -32,49 +32,13 @@ Once you've completed a subject of a difficulty, you get to choose from another 
 
 Biology questions range from basic knowledge in Easy mode to much more difficult biological terminology in hard mode. Ive made it so that the questions are a range of botany and the human body so that u dont get too bored. But if you dont like it, you can always choose another subject.
 
-Examples include:
-
-* Bone marrow
-* Chlorophyll
-* Lungs
-* Transpiration
-* DNA
-* Mitochondria
-* Apoptosis
-* Translation
-* Phagocytosis
-
 ### Chemistry
 
 The Chemistry section contains questions covering basic chemical knowledge through to harder formula and chemistry questions. The hard section is formulae recall which shouldn't be too hard if you know ur stuff. But let's be honest, who even remembers the formula for like idk, dihydrogen monoxide. 
 
-Examples include:
-
-* Diamond
-* Sodium chloride
-* Helium
-* Exothermic reactions
-* Electrons
-* Catalysts
-* Calcium carbonate
-* Relative formula mass
-* Sulfuric acid
-
 ### Maths
 
 The Maths section progresses from very simple questions to significantly harder maths questions. I mean if you know a high level of maths, these questions should not be too hard. Otherwise, they are really hard for anyone below maybe... 16 or 15. 
-
-Examples include:
-
-* Triangles
-* Time
-* Even numbers
-* Tangents
-* Chords
-* Perfect numbers
-* Inflection points
-* Orthogonal vectors
-* Derivatives
 
 ## Difficulty Levels
 
