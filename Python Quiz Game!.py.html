@@ -1,0 +1,576 @@
+<html>
+<head>
+<title>Python Quiz Game!.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+.s4 { color: #7a7e85;}
+.s5 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Python Quiz Game!.py</font>
+</center></td></tr></table>
+<pre><span class="s0">print</span><span class="s1">(</span><span class="s2">'================='</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">' The Python Quiz'</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'================='</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'Welcome!'</span><span class="s1">)</span>
+
+<span class="s0">score </span><span class="s1">= </span><span class="s3">0</span>
+<span class="s4"># I have created a score variable where the score is tracked throughout the game. If the question is wrong, you lose a point, if the score is 0, the game will not deduct any points.</span>
+<span class="s0">difficulty </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What difficulty do you want to choose? Choose from Easy, Medium or Hard '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+<span class="s4"># The game has 3 modes and will ask you to choose from one. If you choose e.g. biology, you will be asked biology questions but if you then finish them, you can choose either maths or chemistry.</span>
+<span class="s5">if </span><span class="s0">difficulty </span><span class="s1">== </span><span class="s2">'easy'</span><span class="s1">:</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Easy mode selected. THIS IS SO EASY. AT LEAST CHALLENGE YOURSELF. TRY IT IF YOU WANT THOUGH'</span><span class="s1">)</span>
+<span class="s4"># this is a big if-clause and contains the easy, medium and hard selection. If you choose easy you will be directed to the section below, if you choose medium the one after it and if you choose hard the last one</span>
+    <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What subject do you want? Biology, Chemistry or Maths? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+    <span class="s4"># here is the question</span>
+    <span class="s5">while True</span><span class="s1">:</span>
+
+        <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'biology'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What part of the human body is responsible for the production of red blood cells?? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'bone marrow'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the bone marrow get a big promotion at the body factory? Because it was always doing a bloody good job and working right down to the marrow!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice one bro!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Its not that hard I swear, try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the green pigment in plants that traps sunlight for making food? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'chlorophyll'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why are plants so good at math? Because they have square roots!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice on buddy, you got it right this time'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Which organs in your chest fill up with air when you breathe in? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'lungs'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'What did one lung say to the other? We need to stick together, we are a breath-taking pair! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Someone knows a little biology...'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Chemistry or Maths next? Type Chemistry, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'chemistry'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the hardest natural substance on Earth, made completely out of carbon atoms? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'diamond'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why are diamonds so good at chemistry? Because they are full of brilliant elements!' </span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Idk how you got this, your luck will soon run out'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the common name for the chemical compound &quot;sodium chloride&quot;? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'salt'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Did you hear the joke about the element sodium? Na, I dont think you have'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Bro you are getting so much luck, this is actually crazy'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Which very light gas is used to make balloons float in the air? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'helium'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'What happened when the scientist told a joke about helium? Nobody laughed, it just got a high-pitched giggle! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'No way you got this, ngl i thought it was oxygen the first time i came across this question'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Maths next? Type Biology, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'maths'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What shape do you get if you slice a round pizza into perfect triangles? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'triangle'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why was the triangle so popular? Because it always had three acute points to make! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Tried to trick you there. Btw these jokes are so bad.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'How many minutes are there in a quarter of an hour? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'15'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the clock get sent to the principals office? It wouldnt stop ticking people off!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This could not be any easier. Do you want a medal for getting it right?'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Genuinely what are you doing with your life'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What do you call any number that can be divided by 2 without leaving a remainder? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'even'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the odd number get scared of the number 2? Because 2 was trying to make things even! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This almost tested your maths skill, like almost.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Your wasting your time, go learn how to do division first before attempting this question again. You are hopeless.'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Chemistry next? Type Biology, Chemistry or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+        <span class="s5">else</span><span class="s1">:</span>
+            <span class="s0">print</span><span class="s1">(</span><span class="s2">'That is not one of the subjects!'</span><span class="s1">)</span>
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Choose Biology, Chemistry or Maths: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+
+<span class="s5">elif </span><span class="s0">difficulty </span><span class="s1">== </span><span class="s2">'medium'</span><span class="s1">:</span>
+
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Medium mode selected! HERE WE GO NOW. THESE ARE ACTUAL QUESTIONS'</span><span class="s1">)</span>
+
+    <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What subject do you want? Biology, Chemistry or Maths? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+    <span class="s5">while True</span><span class="s1">:</span>
+
+        <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'biology'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the name of the process where plants lose water vapor through tiny holes in their leaves? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'transpiration'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the leaf go to the doctor? It was feeling a little green and losing its breath! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice on buddy, your doing okay ig.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'I mean, I almost understand you getting this wrong but if you have a done even a little of botany you shouldve got this.'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What molecule is shaped like a double helix and holds all the genetic instructions for life? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'dna'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the DNA molecule go to prison? Because it was caught making a bad replication!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'The double helix gave it away right... bad questiom :('</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'THE ANSWER IS IN THE QUESTION!'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Which organelle is known as the powerhouse of the cell because it generates chemical energy? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'mitochondria'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the cell take the mitochondria to court? It was charged with a power trip! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You knew the meaning of organelle right? Good good good...'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'I almost understand why you got this wrong. Go search organelle up'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Chemistry or Maths next? Type Chemistry, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'chemistry'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for a chemical reaction that releases energy in the form of heat or light? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'exothermic'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why are exothermic reactions so popular at parties? Because they always bring the heat! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This is good. Nice answer. Exo vs endo gets me confused.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Its the other one, if ykyk'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What are the tiny, negatively charged particles that spin around the outside of an atoms nucleus? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'electrons'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why should you never trust an atom? Because they make up everything!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This is easy but the joke is better right? You have to admit it'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Just list all the sub atomic particles, youll eventually get it. trust me'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What do you call a substance that speeds up a chemical reaction without being used up itself? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'catalyst'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the catalyst get a speeding ticket? It couldnt stop accelerating the process!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This is some proper chemistry now. Nice job'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'if you dont know much chem you wont get this unless u search on google but at that point why are u even doing this quiz'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Maths next? Type Biology, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'maths'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the mathematical term for a straight line that touches the outside of a circle at only one point? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'tangent'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the teacher get mad when the student changed the subject? Because they went off on a tangent! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'I mean this is a half decent joke. nice one tho'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Its all circle theorums...'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for a straight line segment that connects two points on a curve?' </span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'chord'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the math book look so sad? Because it had too many problems, and nobody could ever strike a chord with it!' </span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Cant lie, but this is a similar question to the first. If youve done circle theorums youll find this easy'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'If you got tanget, you must have got this come on... '</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for a natural number that is equal to the sum of its proper positive divisors (excluding the number itself)? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'perfect'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why was the number 6 so confident? Because it knew it was perfect!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'like me'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Well done! this was reasonably hard ig'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'This, I will admit, is hard...'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Chemistry next? Type Biology, Chemistry or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+        <span class="s5">else</span><span class="s1">:</span>
+            <span class="s0">print</span><span class="s1">(</span><span class="s2">'That is not one of the subjects!'</span><span class="s1">)</span>
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Choose Biology, Chemistry or Maths: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+
+<span class="s5">elif </span><span class="s0">difficulty </span><span class="s1">== </span><span class="s2">'hard'</span><span class="s1">:</span>
+
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Hard mode selected!'</span><span class="s1">)</span>
+
+    <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What subject do you want? Biology, Chemistry or Maths? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+    <span class="s5">while True</span><span class="s1">:</span>
+
+        <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'biology'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for the programed cell death that occurs as a normal, controlled part of an organisms growth or development? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'apoptosis'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the cell get single-handedly voted out of the biological community? It just couldnt stop taking things personally and chose to go out in a blaze of apoptosis! '</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'These are seriously hard, like actually your good if you are getting this'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Understandable, this is quite difficult'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the specific enzymatic process where mRNA is converted into an amino acid chain to form a protein? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'translation'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why are ribosomes terrible at foreign languages? Because no matter how hard they try, every sentence just turns into a chain of amino acids!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'These jokes are really really bad, but again nice one!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You chose this difficulty, i didnt'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for the process by which a cell engulfs solid particles to form an internal vesicle? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'phagocytosis'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the cell eat its homework? Because it was practicing phagocytosis!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'These questions are getting ridiculous now. Nice one!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You chose this difficulty, i didnt'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Chemistry or Maths next? Type Chemistry, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'chemistry'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the formula for calcium carbonate? No capitals needed format like hno3 for nitric acid as an example  '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'caco3'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did calcium carbonate get invited to every party? Because it always had good chemistry!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You got it. Starting strong.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the relative formula mass of H2O? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'18'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why was H2O always calm? Because it knew how to go with the flow!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You got it. Water is carrying this section.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the formula for sulfuric acid? No capitals needed format like hno3 for nitric acid as an example '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'h2so4'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the acid get kicked out of chemistry class? Because it was acting too basic!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice one buddy. You actually know your acids.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Maths next? Type Biology, Maths or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+
+        <span class="s5">elif </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'maths'</span><span class="s1">:</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">question </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the term for a point on a curve where the concavity changes from concave up to concave down (or vice versa)? 1 word answer '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">question </span><span class="s1">== </span><span class="s2">'inflection'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'My life had a similar moment, but instead of the concavity changing, I just realized I was going downhill fast.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice one buddy! This was a hard starting question.'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Unlucky but understandable.'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What do you call two vectors whose dot product equals zero? Not perpendicular but it is correct.'</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'orthogonal'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why did the two vectors stop talking? Because they just could not find the right angle between them!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Nice one buddy! This is quite impressive if ur getting it right..'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s5">while True</span><span class="s1">:</span>
+                <span class="s0">answer </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'What is the derivative of x squared? '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+                <span class="s5">if </span><span class="s0">answer </span><span class="s1">== </span><span class="s2">'2x'</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Why was the derivative so confident? Because it knew exactly how things were changing!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'You actually know calculus. Respect!'</span><span class="s1">)</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">''</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">+= </span><span class="s3">1</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Score:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+                    <span class="s5">break</span>
+                <span class="s5">else</span><span class="s1">:</span>
+                    <span class="s0">print</span><span class="s1">(</span><span class="s2">'Try again'</span><span class="s1">)</span>
+                    <span class="s0">score </span><span class="s1">-= </span><span class="s3">1</span>
+
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Would you like to do Biology or Chemistry next? Type Biology, Chemistry or No: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+            <span class="s5">if </span><span class="s0">subject </span><span class="s1">== </span><span class="s2">'no'</span><span class="s1">:</span>
+                <span class="s5">break</span>
+
+        <span class="s5">else</span><span class="s1">:</span>
+            <span class="s0">print</span><span class="s1">(</span><span class="s2">'That is not one of the subjects!'</span><span class="s1">)</span>
+            <span class="s0">subject </span><span class="s1">= </span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Choose Biology, Chemistry or Maths: '</span><span class="s1">).</span><span class="s0">strip</span><span class="s1">().</span><span class="s0">lower</span><span class="s1">()</span>
+
+
+<span class="s5">else</span><span class="s1">:</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">'That is not a valid difficulty!'</span><span class="s1">)</span>
+
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'================='</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'FINAL SCORE:'</span><span class="s1">, </span><span class="s0">score</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'================='</span><span class="s1">)</span></pre>
+</body>
+</html>
