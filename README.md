@@ -2,15 +2,14 @@
 
 Welcome to my (drum roll) **The Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to school. In fact I dropped computer science as a subject since I am really bad at coding and anything remotely software related so feed back on this would be AMAZING!
 
-I created this project to 
+I created this project to return to something I previously used to hate and try do it again. In the past I literally used codex for everything but now, I have changed! I have watched several python tutorials and read articles which have taught me the basics of python and I have built from them to (hopefully) create a game YOU will enjoy playing! 
 
 ## Features
 
-* **3 difficulty levels**
-
-  * Easy
-  * Medium
-  * Hard
+The game has 3 difficulty levels ranging from 
+- Easy
+- Medium
+- Hard
 
 * **3 subjects**
 
