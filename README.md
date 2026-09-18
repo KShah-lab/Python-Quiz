@@ -65,5 +65,6 @@ The hardest section of the quiz contains more advanced terminology and concepts.
 Some questions are deliberately difficult, particularly in Biology and Maths.
 
 
-
+AND THAT IS IT! NICE! 
+# ALL EXPLANATIONS FOR EVERYTHING I HAVE DONE IS IN THE PYTHON QUIZ EXPLANATIONS PAGE WHERE EACH KEY FUNCTION IS EXPLAINED... BY ME! A BEGINNER!
 
