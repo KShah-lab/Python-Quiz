@@ -1,8 +1,16 @@
 # The Python Quiz
 
-Welcome to my (drum roll) **The Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to school. In fact I dropped computer science as a subject since I am really bad at coding and anything remotely software related so feed back on this would be AMAZING!
+Welcome to my (drum roll) **The Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to it, and it is also not an exam preparation tool. It is just a fun, themed challenge I built to make revising and testing myself a little more enjoyable.
 
-I created this project to return to something I previously used to hate and try do it again. In the past I literally used codex for everything but now, I have changed! I have watched several python tutorials and read articles which have taught me the basics of python and I have built from them to (hopefully) create a game YOU will enjoy playing! 
+I created this project to return to something I previously used to hate and try to do it again. In the past I literally used codex for everything but now, I have changed! I have watched several python tutorials and built this project myself to improve my understanding and confidence in coding.
+
+## Screenshots
+
+<div align="center">
+  <img src="Images/Screenshot%202026-09-20%20at%2015.18.11.png" alt="Python Quiz start screen" width="700" />
+  <img src="Images/Screenshot%202026-09-20%20at%2015.19.49.png" alt="Python Quiz subject and question screen" width="700" />
+  <img src="Images/Screenshot%202026-09-20%20at%2015.20.02.png" alt="Python Quiz final score screen" width="700" />
+</div>
 
 # GAMEPLAY YES!
 
@@ -11,7 +19,7 @@ The game has 3 difficulty levels ranging from
 - Medium
 - Hard
 
-With those 3 difficulties, there are also 3 subjects raining from
+With those 3 difficulties, there are also 3 subjects ranging from
 - Biology
 - Maths
 - Chemistry
@@ -21,24 +29,24 @@ There is also a score system! This is where if you get a question right... you g
 But if you get a question wrong... you lose a point! 
 The aim is to get the most points possible. If you get in the negatives, you have to spend that amount as cash in your bank account on dehydrated water. 
 To help, if you get a question wrong, you can try again. This comes with a little message of motivation to do better next time. 
-Likewise, if u get the question right, I provide you with a really bad joke and another message of motivation! 
+Likewise, if you get the question right, I provide you with a really bad joke and another message of motivation! 
 
-Once you've completed a subject of a difficulty, you get to choose from another subject. If you want to do another level, just restart the game and you can pick again and at the end just add up your final scores! 
+Once you've completed a subject of a difficulty, you get to choose from another subject. If you want to do another level, just restart the game and you can pick again and at the end just add up your score to see how you did.
 
 
 ## Subjects
 
 ### Biology
 
-Biology questions range from basic knowledge in Easy mode to much more difficult biological terminology in hard mode. Ive made it so that the questions are a range of botany and the human body so that u dont get too bored. But if you dont like it, you can always choose another subject.
+Biology questions range from basic knowledge in Easy mode to much more difficult biological terminology in hard mode. I've made it so that the questions are a range of botany and the human body so that the game is both informative and fun.
 
 ### Chemistry
 
-The Chemistry section contains questions covering basic chemical knowledge through to harder formula and chemistry questions. The hard section is formulae recall which shouldn't be too hard if you know ur stuff. But let's be honest, who even remembers the formula for like idk, dihydrogen monoxide. 
+The Chemistry section contains questions covering basic chemical knowledge through to harder formula and chemistry questions. The hard section is formula recall which shouldn't be too hard if you know your basics.
 
 ### Maths
 
-The Maths section progresses from very simple questions to significantly harder maths questions. I mean if you know a high level of maths, these questions should not be too hard. Otherwise, they are really hard for anyone below maybe... 16 or 15. 
+The Maths section progresses from very simple questions to significantly harder maths questions. I mean if you know a high level of maths, these questions should not be too hard. Otherwise, they are rewarding to attempt and help build confidence.
 
 ## Difficulty Levels
 
@@ -67,4 +75,3 @@ Some questions are deliberately difficult, particularly in Biology and Maths.
 
 AND THAT IS IT! NICE! 
 # ALL EXPLANATIONS FOR EVERYTHING I HAVE DONE IS IN THE PYTHON QUIZ EXPLANATIONS PAGE WHERE EACH KEY FUNCTION IS EXPLAINED... BY ME! A BEGINNER!
-
