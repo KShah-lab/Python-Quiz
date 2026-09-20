@@ -1,8 +1,8 @@
 # The Python Quiz
 
-Welcome to my (drum roll) **The Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to it, and it is also not an exam preparation tool. It is just a fun, themed challenge I built to make revising and testing myself a little more enjoyable.
+Welcome to my **Python Quiz** — a Python quiz game covering **Biology, Chemistry and Maths** across three different difficulty levels! This game is not school work or anything related to it, and it is also not an exam preparation tool. It is just a beginners attempt to learn python whilst making it a fun experience. I generally hate software and everything to do with it but this project is an aim for me to change it hopefully/ 
 
-I created this project to return to something I previously used to hate and try to do it again. In the past I literally used codex for everything but now, I have changed! I have watched several python tutorials and built this project myself to improve my understanding and confidence in coding.
+I created this project to return to something I previously used to hate and try to do it again. I have watched several python tutorials and built this project myself to improve my understanding and confidence in coding.
 
 ## Screenshots
 
