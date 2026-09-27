@@ -3,7 +3,7 @@
 This is my python quiz project, um have a read below ig.
 I made the project to learn python and it is supposed to build upon what I did in the other project which is a python guessing game. python is not that hard but I kinda am bad at coding so thats why I made this so I could learn somth by myself
 
-BEFORE PLAYING THE GAME YOU MUST RUN THIS CODE: chmod +x /Users/khilli/Downloads/PythonQuizGame
+BEFORE PLAYING THE GAME YOU MUST RUN THIS CODE: chmod +x ./PythonQuizGame
 ## Screenshots
 
 <div align="center">
