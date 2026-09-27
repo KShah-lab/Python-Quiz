@@ -2,6 +2,8 @@
 
 This is my python quiz project, um have a read below ig.
 I made the project to learn python and it is supposed to build upon what I did in the other project which is a python guessing game. python is not that hard but I kinda am bad at coding so thats why I made this so I could learn somth by myself
+
+BEFORE PLAYING THE GAME YOU MUST RUN THIS CODE: chmod +x /Users/khilli/Downloads/PythonQuizGame
 ## Screenshots
 
 <div align="center">
@@ -32,5 +34,5 @@ Likewise, if you get the question right, I provide you with a really bad joke an
 Once you've completed a subject of a difficulty, you get to choose from another subject. If you want to do another level, just restart the game and you can pick again and at the end just add up your score to see how you did.
 
 
-AND THAT IS IT! NICE! 
+AND THAT IS IT! NICE
 
