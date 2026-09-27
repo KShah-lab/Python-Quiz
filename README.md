@@ -1,6 +1,7 @@
 # The Python Quiz
 
 This is my python quiz project, um have a read below ig.
+I made the project to learn python and it is supposed to build upon what I did in the other project which is a python guessing game. python is not that hard but I kinda am bad at coding so thats why I made this so I could learn somth by myself
 ## Screenshots
 
 <div align="center">
@@ -32,4 +33,4 @@ Once you've completed a subject of a difficulty, you get to choose from another 
 
 
 AND THAT IS IT! NICE! 
-# ALL EXPLANATIONS FOR EVERYTHING I HAVE DONE IS IN THE PYTHON QUIZ EXPLANATIONS PAGE WHERE EACH KEY FUNCTION IS EXPLAINED... BY ME! A BEGINNER!
+
