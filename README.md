@@ -34,5 +34,5 @@ Likewise, if you get the question right, I provide you with a really bad joke an
 Once you've completed a subject of a difficulty, you get to choose from another subject. If you want to do another level, just restart the game and you can pick again and at the end just add up your score to see how you did.
 
 
-AND THAT IS IT! NICE
+~ KS
 
